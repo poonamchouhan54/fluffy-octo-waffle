@@ -13,7 +13,7 @@ const server = http.createServer(async (req, res) => {
     res.statusCode = code;
     return res;
   };
-  
+
   res.json = function(data) {
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify(data));
