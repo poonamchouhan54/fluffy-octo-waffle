@@ -1,6 +1,5 @@
 import http from 'http';
 
-// Dynamically import the handler from the api folder
 const modulePath = './api/filmysearch.js';
 const filmyModule = await import(modulePath);
 const handler = filmyModule.default;
