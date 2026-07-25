@@ -1,6 +1,6 @@
 import http from 'http';
 
-const modulePath = './api/filmysearch.js';
+const modulePath = './filmysearch.js';
 const filmyModule = await import(modulePath);
 const handler = filmyModule.default;
 
